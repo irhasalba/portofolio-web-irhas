@@ -1,0 +1,15 @@
+---
+const {tags,projectName,description,imageUrl,altImg} = Astro.props
+---
+<div class="card card-compact bg-base-100 w-[363px] shadow-xl">
+    <figure>
+      <img
+        src={imageUrl}
+        alt={altImg} />
+    </figure>
+    <div class="card-body font-poppins">
+      <p class="font-thin font-poppins text-sm">{tags}</p>
+      <h2 class="card-title font-recoleta font-bold text-white">{projectName}</h2>
+      <p>{description}</p>
+    </div>
+  </div>
