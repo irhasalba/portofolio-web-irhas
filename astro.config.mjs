@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site:'https://irhasalba.github.io',
-  repo: 'portofolio-web-irhas'
+  base: 'portofolio-web-irhas',
 });
