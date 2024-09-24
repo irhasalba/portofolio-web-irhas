@@ -5,6 +5,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site:'https://irhasalba.github.io',
-  base: '/portofolio-web-irhas/',
+  site:'https://irhasalba.my.id'
 });
