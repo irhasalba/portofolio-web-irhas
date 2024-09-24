@@ -8,7 +8,10 @@ const {tags,projectName,description,imageUrl,altImg} = Astro.props
         alt={altImg} />
     </figure>
     <div class="card-body font-poppins">
-      <p class="font-thin font-poppins text-sm">{tags}</p>
+      <div class="flex gap-2">
+        <div class="badge badge-accent font-poppins font-thin">{tags}</div>
+        <div class="badge badge-primary font-poppins font-thin">Backend</div>
+      </div>
       <h2 class="card-title font-recoleta font-bold text-white">{projectName}</h2>
       <p>{description}</p>
     </div>
