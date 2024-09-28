@@ -3,15 +3,31 @@
 ---
 
 <div class="navbar bg-base-100">
-    <div class="flex-1 justify-between">
-      <a class="btn btn-ghost text-xl font-recoleta inline">Irhasalba</a>
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1 font-recoleta">
+  <div class="flex-1">
+    <a class="text-xl font-recoleta btn btn-ghost normal-case">Irhasalba</a>
+  </div>
+  <div class="flex-none">
+    <!-- Button for mobile menu -->
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-md w-35 right-1 z-40 fixed">
         <li><a>Home</a></li>
         <li><a>Portofolio</a></li>
         <li><a>Contact Me</a></li>
         <li><a>About</a></li>
       </ul>
     </div>
+
+    <!-- Horizontal menu for larger screens -->
+    <ul class="menu menu-horizontal px-1 hidden lg:flex font-recoleta">
+      <li><a>Home</a></li>
+      <li><a>Portofolio</a></li>
+      <li><a>Contact Me</a></li>
+      <li><a>About</a></li>
+    </ul>
   </div>
+</div>
