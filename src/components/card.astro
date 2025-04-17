@@ -1,5 +1,5 @@
 ---
-const {tags,projectName,description,imageUrl,altImg} = Astro.props
+const {tags,projectName,description,imageUrl,altImg,role} = Astro.props
 ---
 <div class="card card-compact bg-base-100 md:w-[363px] shadow-xl">
     <figure>
@@ -10,7 +10,7 @@ const {tags,projectName,description,imageUrl,altImg} = Astro.props
     <div class="card-body font-poppins">
       <div class="flex gap-2">
         <div class="badge badge-accent font-poppins font-thin">{tags}</div>
-        <div class="badge badge-primary font-poppins font-thin">Backend</div>
+        <div class="badge badge-primary font-poppins font-thin">{role}</div>
       </div>
       <h2 class="card-title font-recoleta font-bold text-white">{projectName}</h2>
       <p>{description}</p>
